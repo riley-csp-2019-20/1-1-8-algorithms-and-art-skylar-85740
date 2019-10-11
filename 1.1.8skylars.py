@@ -31,7 +31,7 @@ while (star_count < 2):
             clown.fillcolor()
     else (star_count < 2):
         point count = 1
-        while (point_count < 0):
+        while (point_count < 6):
             clown.penup()
             clown.goto()
             clown.pendown()
