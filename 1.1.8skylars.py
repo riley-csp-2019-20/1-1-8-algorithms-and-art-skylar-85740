@@ -15,10 +15,16 @@ while (side_count < 5):
     clown.fillcolor("red")
 #pentagon complete
 #now starting the stars
-point_count = 0
-while (point_count < 0):
-    clown.penup()
-    clown.goto()
+star_count = 0
+while (star_count < 2):
+    if (star_count < 1):
+        point_count = 0
+        while (point_count < 0):
+            clown.penup()
+            clown.goto()
+            clown.pendown()
+            clown.forward()
+            clown.right()
 
 
 
