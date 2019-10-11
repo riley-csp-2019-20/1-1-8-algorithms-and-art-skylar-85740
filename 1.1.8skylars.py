@@ -25,6 +25,17 @@ while (star_count < 2):
             clown.pendown()
             clown.forward()
             clown.right()
+            clown.forward()
+            clown.left()
+            clown_count += 1
+            clown.fillcolor()
+    else (star_count < 2):
+        point count = 1
+        while (point_count < 0):
+            clown.penup()
+            clown.goto()
+            clown.pendown()
+            clown.
 
 
 
