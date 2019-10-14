@@ -1,0 +1,64 @@
+#New Clown design for masks
+
+import turtle as trtl 
+clown = trtl.Turtle()
+#creating the pentagon first
+t = trtl.Turtle()
+clown.pensize(3)
+clown_count = 0
+clown.fillcolor("red")
+clown.begin_fill()
+while (clown_count < 5):
+    clown_x = t.xcor()
+    clown_y = t.ycor()
+    clown.forward(200)
+    clown.left(72)
+    clown_count += 1
+clown.end_fill()
+
+#pentagon complete
+#now starting the stars
+start_clown = clown.xcor()
+start_clown = clown.ycor()
+star_count = 0
+while (star_count < 2):
+    if (star_count < 1):
+        point_count = 0
+        while (point_count < 6):
+            clown.penup()
+            clown.goto(350,275)
+            clown.pendown()
+            clown.forward(75)
+            clown.right(135)
+            clown.forward(75)
+            clown.left(45)
+            start_clown = clown.xcor()
+            start_clown = clown.ycor()
+            clown.fillcolor("blue")
+            point_count = point_count + 1
+            star_count += 1
+    else:
+        point_count = 0
+        while (point_count < 6):
+            clown.penup()
+            clown.goto(25,25)
+            clown.pendown()
+            clown.forward(50)
+            clown.left(135)
+            clown.forward(50)
+            clown.right(45)
+            point_count += 1
+            clown.fillcolor("blue")
+            star_count += 1
+#stars now complete
+#now starting the oval
+circle_count = 0
+clown.fillcolor("orange")
+clown.begin_fill
+while (circle_count < 1):
+    clown.penup()
+    clown.goto(100,425)
+    clown.pendown()
+    clown.circle(50)
+    clown.end_fill
+    clown_count -= 1
